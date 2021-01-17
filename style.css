@@ -14,6 +14,22 @@
   margin-right: 5px !important;
 }
 
+
+body{
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #ffffff8a;
+  z-index: -1;
+}
 header{
   background: #4E2A84;
 }
@@ -34,6 +50,7 @@ header .btn.bg{
 
 
 /* now the main section */
+
 #card-container{
   padding: 0px 10px;
 }
@@ -42,6 +59,8 @@ header .btn.bg{
   margin-top: 20px;
   box-shadow: 0px 0px 10px #00000030;
   border-radius: 3px;
+  background-color: #fff;
+  display: none;
 }
 .card h1{
   font-weight: 500;
@@ -87,7 +106,8 @@ header .btn.bg{
   list-style: none;
 }
 #items-list li{
-  border: 1px solid #00000045;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #00000030;
   padding: 10px 15px;
   border-radius: 3px;
   display: flex;

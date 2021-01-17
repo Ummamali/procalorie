@@ -29,27 +29,27 @@
           <div class="grid-2">
             <div class="form-group">
               <label for="item">Food Item</label>
-              <input type="text" id="item" placeholder="Item here...">
+              <input type="text" class='item-name' placeholder="Item here...">
             </div>
             <div class="form-group mb-1">
               <label for="name">Calories</label>
-              <input type="number"  id="calories" placeholder="Calories here...">
+              <input type="number" class="calories" placeholder="Calories here...">
             </div>
           </div>
           <button type="submit" class="btn normal bg"><i class="fas fa-plus"></i>Add Meal</button>
         </form>
       </div>
       <!-- now the edit card -->
-      <!-- <div class="card" id="edit-card">
+      <div class="card" id="edit-card">
         <h1>Edit your meal</h1>
         <div class="grid-2">
           <div class="form-group">
             <label for="item">Food Item</label>
-            <input type="text" id="item" placeholder="New item here..." autocomplete="off">
+            <input type="text" class='item-name' placeholder="New item here..." autocomplete="off">
           </div>
           <div class="form-group mb-1">
             <label for="name">Calories</label>
-            <input type="number" id="calories" placeholder="New calories here...">
+            <input type="number"class="calories" placeholder="New calories here...">
           </div>
         </div>
         <div class="first frow">
@@ -59,7 +59,7 @@
           </div>
           <button class="btn"><i class="fas fa-times"></i>Cancel</button>
         </div>
-      </div> -->
+      </div>
     </div>
     <div class="pd-15" id="calories">
       <h1>Total Calories: <span>1500</span></h1>
@@ -85,6 +85,8 @@
       </ul>
     </div>
   </main>
+  <script src="./classes.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
