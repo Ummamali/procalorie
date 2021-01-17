@@ -1,0 +1,120 @@
+/* This is the main stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+
+:root{
+  --primary: #4e2a84;
+  --warn: #ffa329;
+  --danger: #d20700;
+}
+
+.btn i, header h2 i{
+  margin-right: 5px !important;
+}
+
+header{
+  background: #4E2A84;
+}
+header .frow{
+  padding: 15px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2{
+  color: #fff;
+  font-size: 28px;
+}
+header .btn.bg{
+  background-color: #ae58f1;
+  text-transform: none;
+  border-radius: 2px;
+}
+
+
+/* now the main section */
+#card-container{
+  padding: 0px 10px;
+}
+.card{
+  padding: 25px 15px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px #00000030;
+  border-radius: 3px;
+}
+.card h1{
+  font-weight: 500;
+}
+.card .form-group input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 5px 3px 5px;
+  border-radius: 0px;
+}
+.card .form-group input::placeholder{
+  font-size: 14px;
+  color: #aaa;
+  font-style: italic;
+}
+
+.card .btn{
+  text-transform: none;
+  padding: 8px 15px;
+  margin: 0px 5px;
+}
+.card .btn.bg.normal{
+  background-color: var(--primary);
+}
+.card .btn.bg.warn{
+  background: var(--warn);
+}
+.card .btn.bg.danger{
+  background-color: var(--danger);
+}
+
+#edit-card .first.frow{
+  justify-content: space-between;
+}
+
+#calories h1{
+  font-weight: 400;
+  text-align: center;
+}
+
+#items-list {
+  list-style: none;
+}
+#items-list li{
+  border: 1px solid #00000045;
+  padding: 10px 15px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+#items-list li span.name{
+  font-weight: 600;
+  font-size: 17px;
+  padding-right: 20px;
+}
+#items-list li span.amount{
+  font-family: 'Roboto', sans-serif;
+  color: #808080;
+}
+
+#items-list li a{
+  color: #000000;
+}
+#items-list li a:hover{
+  color: var(--warn);
+}
+
+/* utility classes */
+.container{
+  max-width: 880px;
+  margin: 0px auto;
+}
