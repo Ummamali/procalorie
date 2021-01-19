@@ -15,7 +15,7 @@
     <div class="container">
       <div class="frow">
         <h2><i class="fas fa-hamburger"></i>ProCalorie</h2>
-        <button class="btn bg">Clear All</button>
+        <button class="btn bg" id="clear-all-btn">Clear All</button>
       </div>
     </div>
   </header>
@@ -54,34 +54,18 @@
         </div>
         <div class="first frow">
           <div class="frow">
-            <button class="btn warn bg"><i class="fas fa-edit"></i>Update Meal</button>
-            <button class="btn danger bg"><i class="fas fa-trash"></i>Delete Meal</button>
+            <button class="btn warn bg" id="update-meal-btn"><i class="fas fa-edit"></i>Update Meal</button>
+            <button class="btn danger bg" id="delete-meal-btn"><i class="fas fa-trash"></i>Delete Meal</button>
           </div>
-          <button class="btn"><i class="fas fa-times"></i>Cancel</button>
+          <button class="btn" id="cancel-edit-btn"><i class="fas fa-times"></i>Cancel</button>
         </div>
       </div>
     </div>
-    <div class="pd-15" id="calories">
-      <h1>Total Calories: <span>1500</span></h1>
+    <div class="pd-15" id="total-cals">
+      <h1>Total Calories: <span></span></h1>
     </div>
     <div class="ph-1">
       <ul id="items-list">
-        <li>
-          <p><span class="name">Stake</span><span class="amount">1900 cal</span></p>
-          <a href="#"><i class="fas fa-pencil-alt"></i></a>
-        </li>
-        <li>
-          <p><span class="name">Stake</span><span class="amount">1900 cal</span></p>
-          <a href="#"><i class="fas fa-pencil-alt"></i></a>
-        </li>
-        <li>
-          <p><span class="name">Stake</span><span class="amount">1900 cal</span></p>
-          <a href="#"><i class="fas fa-pencil-alt"></i></a>
-        </li>
-        <li>
-          <p><span class="name">Stake</span><span class="amount">1900 cal</span></p>
-          <a href="#"><i class="fas fa-pencil-alt"></i></a>
-        </li>
       </ul>
     </div>
   </main>

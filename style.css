@@ -27,7 +27,7 @@ body::before{
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #ffffff8a;
+  background: #ffffffb3;
   z-index: -1;
 }
 header{
@@ -97,7 +97,7 @@ header .btn.bg{
   justify-content: space-between;
 }
 
-#calories h1{
+#total-cals h1{
   font-weight: 400;
   text-align: center;
 }
@@ -109,13 +109,13 @@ header .btn.bg{
   background-color: #fff;
   box-shadow: 0px 0px 10px #00000030;
   padding: 10px 15px;
-  border-radius: 3px;
+  border-radius: 0px 3px 3px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 5px 0px;
+  border-left: 5px solid #292929;
 }
-
 #items-list li span.name{
   font-weight: 600;
   font-size: 17px;
