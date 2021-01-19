@@ -15,21 +15,6 @@
 }
 
 
-body{
-  background-image: url('./bg.jpg');
-  background-size: cover;
-  background-position: center center;
-}
-body::before{
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background: #ffffffb3;
-  z-index: -1;
-}
 header{
   background: #4E2A84;
 }
@@ -137,4 +122,64 @@ header .btn.bg{
 .container{
   max-width: 880px;
   margin: 0px auto;
+}
+
+
+
+
+/* media queries for smaller screens */
+
+/* 450px or less */
+@media screen and (max-width: 450px){
+  .res-hide{
+    display: none !important;
+  }
+  /* now the card */
+  .card h1{
+    font-size: 26px;
+  }
+  .card .grid-2{
+    grid-template-columns: 1fr;
+  }
+
+  .card .first.frow{
+    flex-direction: column;
+  }
+  .card .first.frow .frow{
+    margin-bottom: 5px;
+    justify-content: space-evenly;
+  }
+  .card .first.frow .frow button.btn{
+    width: 45%;
+  }
+
+  #total-cals h1{
+    font-size: 26px;
+  }
+
+  #items-list li{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #items-list li p{
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  #items-list li p span.name{
+    display: block;
+  }
+  #items-list li a{
+    align-self: flex-end;
+  }
+}
+
+/* 320px or less */
+@media screen and (max-width: 320px){
+  header .frow{
+    flex-direction: column;
+    text-align: center;
+  }
+  header h2{
+    margin-bottom: 10px;
+  }
 }
